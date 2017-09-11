@@ -18,7 +18,7 @@ public class PlayDohSnake
 	
 	public String toString()
 	{
-		String description = "I am a circle, my size is " + size;
+		String description = "I am a snek, my size is " + size;
 		return description;
 	}
 }

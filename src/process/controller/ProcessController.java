@@ -1,5 +1,6 @@
 package process.controller;
 
+import java.util.Scanner;
 import process.model.PlayDohCircle;
 import process.model.PlayDohSnake;
 
@@ -22,16 +23,23 @@ public class ProcessController
 		System.out.println("Look I made a circle");
 		System.out.println(firstCircle);
 		System.out.println(secondCircle);
-		PlayDohCircle thirdCircle = new PlayDohCircle(10);
+		
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("How big of a circle do you want?");
+		int circleSize = myScanner.nextInt();
+		
+		PlayDohCircle thirdCircle = new PlayDohCircle(circleSize);
 		System.out.println(thirdCircle);
 		
 		PlayDohSnake firstSnake = new PlayDohSnake();
 		PlayDohSnake secondSnake = new PlayDohSnake();
 		
-		System.out.println("Look I made a snake");
+		System.out.println("Look I also made a snake");
 		System.out.println(firstSnake);
 		System.out.println(secondSnake);
-		PlayDohSnake thirdSnake = new PlayDohSnake(3);
+		
+		PlayDohSnake thirdSnake = new PlayDohSnake(circleSize);
 		System.out.println(thirdSnake);
 	}
+	
 }
