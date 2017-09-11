@@ -20,6 +20,6 @@ public class ProcessController
 		
 		System.out.println("Look I made a circle");
 		System.out.println(firstCircle);
-		
+		System.out.println(secondCircle);
 	}
 }
