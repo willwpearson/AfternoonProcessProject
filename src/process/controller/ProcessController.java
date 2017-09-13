@@ -40,6 +40,14 @@ public class ProcessController
 		
 		PlayDohSnake thirdSnake = new PlayDohSnake(circleSize);
 		System.out.println(thirdSnake);
+		
+		System.out.println("What size should we change the circle to?" );
+		int updated = myScanner.nextInt();
+		thirdCircle.setSize(updated);
+		System.out.println("The circle now is... ");
+		System.out.println(thirdCircle);
+		
+		
 	}
 	
 }
